@@ -16,7 +16,7 @@ app.use((req,res,next)=>{
 
 
 //routes
-app.use(workoutRoutes)
+app.use('/api/routes',workoutRoutes)
 
 //listen for request
 app.listen(process.env.PORT, ()=>{
