@@ -3,7 +3,7 @@ const  express = require('express')
 const router = express.Router()
 
 
-//get all workpout
+//get all workout
 router.get('/',(req, res)=>{
     res.json({mssg:'get all workout'})
 })
