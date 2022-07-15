@@ -23,11 +23,17 @@ app.use('/api/routes',workoutRoutes)
 
 
 // connect to database
-mongoose.connect()
-
-
-//listen for request
+mongoose.connect("mongodb+srv://joseph:12345@mernapp.m49xj7x.mongodb.net/?retryWrites=true&w=majority")
+.then(()=>{
+    //listen for request
 app.listen(process.env.PORT, ()=>{
-    console.log('listenx to server 4000')
+    console.log('connected to db and listenx on  port' , process.env.PORT)
 })
+
+})
+.catch((error)=>{
+    console.log(error)
+})
+
+
 
