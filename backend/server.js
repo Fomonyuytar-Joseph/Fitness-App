@@ -5,11 +5,11 @@ const mongoose = require('mongoose')
 const workoutRoutes = require('./routes/workouts')
 
 
-//express app
+// creating the express app
 const app = express();
 
 
-//midddleware
+//middleware
 
 app.use(express.json())
 app.use((req,res,next)=>{
